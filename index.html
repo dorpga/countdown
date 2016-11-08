@@ -22,7 +22,7 @@
     </style>
   </head>
   <body>
-    <div id="timer">00:00:00</div>
+    <div id="timer">00:00:00:00</div>
     <script>
       setInterval(function() {
         // get total seconds between the times
@@ -42,7 +42,7 @@
 
         // what's left is seconds
         var seconds = delta % 60;  // in theory the modulus is not required
-        document.getElementById("timer").innerText = days + ":" + hours + ":" + minutes + ":" + seconds;
+        document.getElementById("timer").innerText = days + ":" + hours + ":" + minutes + ":" + Math.abs(seconds);
       }, 100);
     </script>
   </body>
