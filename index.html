@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Doomsday Countdown</title>
@@ -41,7 +42,7 @@
 
         // what's left is seconds
         var seconds = delta % 60;  // in theory the modulus is not required
-        document.getElementById("timer").innerHtml = days + ":" + hours + ":" + minutes + ":" + seconds;
+        document.getElementById("timer").innerText = days + ":" + hours + ":" + minutes + ":" + seconds;
       }, 100);
     </script>
   </body>
